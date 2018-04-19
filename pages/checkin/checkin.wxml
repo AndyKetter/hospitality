@@ -1,2 +1,20 @@
 <!--pages/checkin/checkin.wxml-->
-<text>pages/checkin/checkin.wxml</text>
+<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="page-section">
+        <view class="page-section-title">新增入住人</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="input" placeholder="请填写姓名" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button class='btn-blue' type="primary" formType="submit">完成</button>
+      </view>
+    </form>
+  </view>
+</view>

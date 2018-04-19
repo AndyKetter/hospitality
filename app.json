@@ -3,11 +3,12 @@
     "pages/checkin/checkin",
     "pages/login/login",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/common/common"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#68B6F3",
+    "navigationBarBackgroundColor": "#5183E4",
     "navigationBarTitleText": "好客科技",
     "navigationBarTextStyle": "white"
   }

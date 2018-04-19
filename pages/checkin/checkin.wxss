@@ -1,1 +1,13 @@
 /* pages/checkin/checkin.wxss */
+@import "../../lib/weui.wxss";
+
+.page-section-title{
+  padding: 20rpx 30rpx;
+}
+/* widget */
+.btn-area{
+  margin-top: 30rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}
