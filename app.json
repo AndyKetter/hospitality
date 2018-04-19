@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/checkin/checkin",
     "pages/login/login",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#68B6F3",
+    "navigationBarTitleText": "好客科技",
     "navigationBarTextStyle": "black"
   }
 }
