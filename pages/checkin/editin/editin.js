@@ -1,4 +1,4 @@
-// pages/checkin/checkin.js
+// pages/checkin/editin/editin.js
 Page({
 
   /**

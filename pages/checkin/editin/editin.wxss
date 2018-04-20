@@ -1,5 +1,5 @@
-/* pages/checkin/checkin.wxss */
-@import "../../lib/weui.wxss";
+/* pages/checkin/editin/editin.wxss */
+@import "../../../lib/weui.wxss";
 
 .page-section-title{
   padding: 20rpx 30rpx;
