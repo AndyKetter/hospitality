@@ -18,7 +18,21 @@ form{
 .btn-blue{
   background-color: #5183E4 !important;
 }
-
+.pd30{
+  padding: 30rpx;
+}
+.f28{
+  font-size: 28rpx;
+}
+.mgl30{
+  margin-left: 30rpx;
+}
+.c-E1761C{
+  color: #E1761C;
+}
+.shadow{
+  box-shadow: 0 0 20px #ddd;
+}
 /* page */
 .container {
   display: flex;

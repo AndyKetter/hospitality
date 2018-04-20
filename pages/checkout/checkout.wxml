@@ -1,0 +1,33 @@
+<!--pages/checkout/checkout.wxml-->
+<view class="container">
+  <view class="page-body hotel shadow">
+    <view class='pd30'>
+      <text>兴威华天酒店</text>
+    </view>
+    <view class='hotel-message'>
+      <view class='image-v'>
+        <image mode='widthFix' class='hotel-image' src='/images/hotel.png'></image>
+      </view>
+      <view class='desc-v'>
+        <view>
+          <text>高级大床房</text>
+        </view>
+        <view class='f28'>
+          <text>2018-04-17</text>至<text>2018-04-18</text><text class='mgl30'>1</text>晚
+        </view>
+        <view class='f28'>
+          <text>床型：大床1.8米</text>
+          <text class='mgl30'>早餐：双早</text>
+        </view>
+      </view>
+      <view class='price-v'>
+        <text class='c-E1761C'>¥428</text>
+      </view>
+    </view>
+    <view class='checkout-v'>
+      <view class='pd30'><image class='prompt-icon' mode='widthFix' src='/images/prompt-icon.png' /><text class='mst f28'>您正在入住中，我们可以帮您</text></view>
+      <view class='out-btn tc' bindtap="noTitlemodalTap">快速退房</view>
+    </view>
+  </view>
+</view>
+

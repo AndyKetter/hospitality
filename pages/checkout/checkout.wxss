@@ -1,0 +1,37 @@
+/* pages/checkout/checkout.wxss */
+.hotel{
+  background-color: #fff;
+}
+.hotel-message{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30rpx 30rpx;
+}
+.hotel-image{
+  width: 160rpx;
+}
+.desc-v{
+  padding: 0 20rpx;
+}
+.checkout-v{
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.out-btn{
+  background-color: #E1761C;
+  color: #fff;
+  line-height: 110rpx;
+  width: 200rpx;
+}
+.prompt-icon{
+  width: 32rpx;
+  position: relative;
+  top: 4rpx;
+}
+.mst{
+  color: #5183E4;
+  margin-left: 20rpx;
+}
