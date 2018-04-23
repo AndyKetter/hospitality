@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/order/order",
     "pages/checkout/checkout",
     "pages/checkin/choosein/choosein",
     "pages/checkin/editin/editin",
     "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/common/common"
+    "pages/common/common",
+    "template/template"
   ],
   "window": {
     "backgroundTextStyle": "light",

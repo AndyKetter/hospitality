@@ -1,5 +1,4 @@
-// pages/checkout/checkout.js
-var page_json = require('../../data/post.js');
+// template/template.js
 Page({
 
   /**
@@ -13,9 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      Data: page_json.checkout_data
-    });
+  
   },
 
   /**
@@ -65,16 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  /**
-   * 用户点击快速退房按钮弹出模态框事件
-   */
-  noTitlemodalTap: function (e) {
-    wx.showModal({
-      title: "温馨提示",
-      content: "尊贵的VIP，您确定要现在退房？",
-      confirmText: "是",
-      cancelText: "点错了"
-    })
   }
 })

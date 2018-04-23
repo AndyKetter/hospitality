@@ -1,0 +1,114 @@
+/* pages/order/order.wxss */
+.hotel{
+  background-color: #fff;
+}
+.hotel-message{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30rpx 30rpx;
+}
+.hotel-image{
+  width: 160rpx;
+}
+.desc-v{
+  padding: 0 20rpx;
+}
+.price-v{
+  visibility: hidden;
+}
+.checkout-v{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.out-btn{
+  background-color: #E1761C;
+  color: #fff;
+  line-height: 110rpx;
+  width: 200rpx;
+}
+.prompt-icon{
+  width: 32rpx;
+  position: relative;
+  top: 4rpx;
+}
+.mst{
+  color: #5183E4;
+  margin-left: 20rpx;
+}
+.detailView{
+  display: flex;
+  flex-direction: row;
+}
+.detailLink{
+  color: #5183E4;
+  padding-right: 40rpx;
+  padding-top: 30rpx;  
+}
+
+
+.personMsg,.invoiceMsg{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30rpx;
+}
+.room,.p-num,.invoice{
+  width: 100px;
+}
+.room-num,.invoice-num{
+  flex: 1;
+}
+.right-img{
+  width: 16rpx;
+}
+.phone-v{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+.phone-inpt{
+  flex: 1;
+}
+
+.hr-cover{
+  height: 10px;
+  background-color: #F8F8F8;
+}
+.msg-desc{
+  font-size: 28rpx;
+  padding: 0 20px 30rpx;
+  background-color: #F8F8F8;
+}
+
+.check-in-v{
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ddd;
+}
+.check-in-p{
+  width: 100px;
+  line-height: 100px;
+  padding-left: 30rpx;
+}
+.check-in-name{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.person-icon{
+  width: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+.person-icon>image{
+  width: 50rpx;
+}
+.c-name{
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 28rpx;
+}
+.c-name:last-child{
+  border-bottom: none;
+}

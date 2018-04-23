@@ -1,0 +1,116 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <view class="page-body hotel shadow">
+    <view class='shadow'>
+      <view class='pd30'>
+        <text>{{Data.hotel_name}}</text>
+      </view>
+      <view class='hotel-message'>
+        <view class='image-v'>
+          <image mode='widthFix' class='hotel-image' src='/images/hotel.png'></image>
+        </view>
+        <view class='desc-v'>
+          <view>
+            <text>高级大床房</text>
+          </view>
+          <view class='f28'>
+            <text>2018-04-17</text>至<text>2018-04-18</text>
+            <text class='mgl30'>1</text>晚
+          </view>
+          <view class='f28'>
+            <text>床型：大床1.8米</text>
+            <text class='mgl30'>早餐：双早</text>
+          </view>
+        </view>
+        <view class='price-v'>
+          <text class='c-E1761C'>¥428</text>
+        </view>
+      </view>
+    </view>
+
+
+    <view class='hr-cover'></view>
+    <view class='shadow'>
+      <view class='personMsg'>
+        <view class='room'>房间数</view>
+        <view class='room-num'>2间</view>
+        <view class='right-icon'>
+          <image class='right-img' mode='widthFix' src='/images/right-icon.png'></image>
+        </view>
+      </view>
+
+
+      <view class='check-in-v'>
+        <view class='check-in-p'>
+          入住人
+        </view>
+
+        <view class='check-in-name'>
+          <view class='c-name'>
+            <input type="number" placeholder='填写1位入住人姓名' />
+          </view>
+          <view class='c-name'>
+            <input type="number" placeholder='填写1位入住人姓名' />
+          </view>
+        </view>
+        <view class='person-icon'>
+          <image mode='widthFix' src='/images/person.png'></image>
+        </view>
+      </view>
+
+
+      <view class='pd30 phone-v'>
+        <view class='p-num'>联系手机</view>
+        <view class='phone-inpt'>
+          <input type="number" placeholder='用于接收信息/联系' />
+        </view>
+      </view>
+    </view>
+    <view class='hr-cover'></view>
+    <view class='shadow'>
+      <view class='invoiceMsg'>
+        <view class='invoice'>发票</view>
+        <view class='room-num'>需要</view>
+        <view class='invoice-switch'>
+          <switch name="switch" />
+        </view>
+      </view>
+      <view class='pd30 phone-v'>
+        <view class='p-num'>发票抬头</view>
+        <view class='phone-inpt'>
+          <input placeholder='请输入发票抬头' />
+        </view>
+      </view>
+      <view class='pd30 phone-v'>
+        <view class='p-num'>纳税人识别号</view>
+        <view class='phone-inpt'>
+          <input type='number' placeholder='15，18位或20位企业税号' />
+        </view>
+      </view>
+
+      <view class='invoiceMsg'>
+        <view class='room-num'>发票注明酒店名和入离日期</view>
+        <view class='invoice-switch'>
+          <switch name="switch" />
+        </view>
+      </view>
+      
+    </view>
+    <view class='msg-desc'>
+      <text>
+        扣款说明：订单一经确认成功，不可取消或变更；如未能如约入住，您的预付费将不予退还。
+      </text>
+    </view>
+
+    <view class='checkout-v shadow'>
+      <view class='pd30'>
+        <text>在线支付</text>
+        <text class='c-E1761C mgl30'>¥428</text>
+      </view>
+      <view class='detailView'>
+        <view class='detailLink'>明细</view>
+        <view class='out-btn tc' bindtap="noTitlemodalTap">立即支付</view>
+      </view>
+    </view>
+  </view>
+</view>
