@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/order/order",
     "pages/checkout/checkout",
+    "pages/order/order",
     "pages/checkin/choosein/choosein",
     "pages/checkin/editin/editin",
     "pages/login/login",
@@ -15,5 +15,29 @@
     "navigationBarBackgroundColor": "#5183E4",
     "navigationBarTitleText": "好客科技",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "预定",
+        "iconPath": "/images/order.png",
+        "selectedIconPath": "/images/orderhl.png"
+      },
+      {
+        "pagePath": "pages/checkout/checkout",
+        "text": "快住",
+        "iconPath": "/images/checkin.png",
+        "selectedIconPath": "/images/checkinhl.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/images/personmsg.png",
+        "selectedIconPath": "/images/personmsghl.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "borderStyle": "white"
   }
 }

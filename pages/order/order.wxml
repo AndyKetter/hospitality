@@ -3,7 +3,7 @@
   <view class="page-body hotel shadow">
     <view class='shadow'>
       <view class='pd30'>
-        <text>{{Data.hotel_name}}</text>
+        <text>兴威华天酒店</text>
       </view>
       <view class='hotel-message'>
         <view class='image-v'>

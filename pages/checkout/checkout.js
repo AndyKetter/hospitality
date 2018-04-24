@@ -1,5 +1,4 @@
 // pages/checkout/checkout.js
-var page_json = require('../../data/post.js');
 Page({
 
   /**
@@ -13,9 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      Data: page_json.checkout_data
-    });
+   
   },
 
   /**
