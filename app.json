@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/checkin/editin/editin",
     "pages/checkin/choosein/choosein",
     "pages/roomOrder/roomOrder",
     "pages/checkout/checkout",
     "pages/order/order",
-    "pages/checkin/editin/editin",
     "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
