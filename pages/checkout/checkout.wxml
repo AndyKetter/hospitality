@@ -25,8 +25,8 @@
       </view>
     </view>
     <view class='checkout-v'>
-      <view class='pd30'><image class='prompt-icon' mode='widthFix' src='/images/prompt-icon.png' /><text class='mst f28'>您正在入住中，我们可以帮您</text></view>
-      <view class='out-btn tc' bindtap="noTitlemodalTap">快速退房</view>
+      <view class='pd30'><image class='prompt-icon' mode='widthFix' src='/images/prompt-icon.png' /><text class='mst f28'>{{msgText}}</text><text class='mst f28 viewBill'>查看账单</text></view>
+      <view wx:if = '{{btn}}' class='out-btn tc' bindtap="noTitlemodalTap">{{btnText}}</view>
     </view>
   </view>
 </view>

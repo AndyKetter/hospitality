@@ -6,7 +6,7 @@
     <view class='nd-btn'><button>酒店预定</button></view>
   </view>
    <scroll-view class='room-list' wx:else>
-      <view class='room-item'wx:for="{{data}}">
+      <view class='room-item' wx:for="{{data}}" wx:key>
 
      
 

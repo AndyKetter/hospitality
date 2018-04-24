@@ -72,23 +72,23 @@
         <view class='invoice'>发票</view>
         <view class='room-num'>需要</view>
         <view class='invoice-switch'>
-          <switch name="switch" />
+          <switch bindchange="switchChange" name="switch" />
         </view>
       </view>
-      <view class='pd30 phone-v'>
+      <view wx:if="{{needInvoice}}" class='pd30 phone-v'>
         <view class='p-num'>发票抬头</view>
         <view class='phone-inpt'>
           <input placeholder='请输入发票抬头' />
         </view>
       </view>
-      <view class='pd30 phone-v'>
+      <view wx:if="{{needInvoice}}" class='pd30 phone-v'>
         <view class='p-num'>纳税人识别号</view>
         <view class='phone-inpt'>
           <input type='number' placeholder='15，18位或20位企业税号' />
         </view>
       </view>
 
-      <view class='invoiceMsg'>
+      <view wx:if="{{needInvoice}}" class='invoiceMsg'>
         <view class='room-num'>发票注明酒店名和入离日期</view>
         <view class='invoice-switch'>
           <switch name="switch" />
@@ -108,7 +108,7 @@
         <text class='c-E1761C mgl30'>¥428</text>
       </view>
       <view class='detailView'>
-        <view class='detailLink'>明细</view>
+        <view class='detailLink' bindtap='detailTap'>明细</view>
         <view class='out-btn tc' bindtap="noTitlemodalTap">立即支付</view>
       </view>
     </view>

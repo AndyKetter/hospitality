@@ -8,6 +8,7 @@
           <view class="weui-cell weui-cell_input">
             <view class="weui-cell__bd">
               <input class="weui-input" name="input" placeholder="中/英文姓名" />
+              <image class='editEmpty' mode='widthFix' src='/images/editEmpty.png'></image>
             </view>
           </view>
         </view>

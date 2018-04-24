@@ -11,3 +11,12 @@
   width: 100%;
   padding: 0 30rpx;
 }
+.editEmpty{
+  width: 48rpx;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+.weui-cell__bd{
+  position: relative;
+}

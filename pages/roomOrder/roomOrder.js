@@ -6,7 +6,7 @@ Page({
    */
   data: {
     data: [
-      { type: 3,
+      { type: 1,
         superTitle:"英威诺酒店",
         title:'酒店酒店',
         time:"2015-12-12 至 2015-12-14晚",
@@ -16,7 +16,7 @@ Page({
       } //type:0等待刷身份证， 1 支付押金 2确认账单，3 快速退房
     ],
     popData: {
-      type: 1, //0普通弹窗， 1 温馨提示
+      type: 0, //0普通弹窗， 1 温馨提示
       isShow: false,
       title: '',
       subTitle: '',

@@ -14,3 +14,42 @@
 .small-desc{
   font-size: 28rpx;
 }
+.checkin{
+  position: relative;
+}
+.check-icon,.edit-icon{
+  width: 48rpx;
+  position: absolute;
+}
+.edit-icon{
+  right: 10px;
+}
+.c-name{
+  padding-left: 70rpx;
+}
+
+.editEmpty{
+  width: 48rpx;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+.weui-cell__bd{
+  position: relative;
+}
+
+.intp_fix{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.weui-cell_input{
+  flex: 1;
+}
+.addBtn{
+  width: 60px;
+  background-color: #EE7E31;
+  text-align: center;
+  color: #fff;
+  line-height: 44px;
+}

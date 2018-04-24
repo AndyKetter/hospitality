@@ -35,3 +35,6 @@
   color: #52B5F0;
   margin-left: 20rpx;
 }
+.viewBill{
+  padding-left: 20px;
+}

@@ -1,15 +1,17 @@
 {
   "pages": [
-    "pages/checkin/editin/editin",
-    "pages/checkin/choosein/choosein",
+    "pages/reserveHotel/reserveHotel",
     "pages/roomOrder/roomOrder",
-    "pages/checkout/checkout",
-    "pages/order/order",
     "pages/login/login",
+    "pages/order/order",
+    "pages/checkin/choosein/choosein",
+    "pages/checkin/editin/editin",
+    "pages/checkout/checkout",
     "pages/index/index",
     "pages/logs/logs",
     "pages/common/common",
-    "template/template"
+    "template/template",
+    "pages/fastCheckIn/fastCheckIn"
   ],
   "window": {
     "backgroundTextStyle": "light",

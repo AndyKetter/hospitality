@@ -4,11 +4,15 @@
     <form catchsubmit="formSubmit" catchreset="formReset">
       <view class="page-section">
         <view class="page-section-title">新增入住人</view>
-        <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cells weui-cells_after-title intp_fix">
           <view class="weui-cell weui-cell_input">
             <view class="weui-cell__bd">
               <input class="weui-input" name="input" placeholder="中/英文姓名" />
+              <image class='editEmpty' mode='widthFix' src='/images/editEmpty.png'></image>
             </view>
+          </view>
+          <view class='addBtn'>
+            <text>添加</text>
           </view>
         </view>
       </view>
@@ -16,8 +20,16 @@
       <view class="page-section">
         <view class="page-section-title">选择入住人</view>
         <view>
-          <view class="weui-cells weui-cells_after-title checkin">李欣然</view>
-          <view class="weui-cells weui-cells_after-title checkin">李欣然</view>
+          <view class="weui-cells weui-cells_after-title checkin">
+            <image class='check-icon' mode='widthFix' src='/images/check-icon.png'></image>
+            <text class='c-name'>李欣然</text>
+            <image class='edit-icon' mode='widthFix' src='/images/edit-icon.png'></image>
+          </view>
+          <view class="weui-cells weui-cells_after-title checkin">
+            <image class='check-icon' mode='widthFix' src='/images/no-check-icon.png'></image>
+            <text class='c-name'>李欣然</text>
+            <image class='edit-icon' mode='widthFix' src='/images/edit-icon.png'></image>
+          </view>
         </view>
         <view class="page-section-title small-desc">每间房只用1个入住人，实际入住时可以按该房间允许入住的人数办理</view>
       </view>
