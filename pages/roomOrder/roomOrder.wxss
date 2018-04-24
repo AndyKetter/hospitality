@@ -1,0 +1,241 @@
+.container{
+  height: 100%;
+}
+.no-data{
+  width: 100%;
+  margin-top: 30%;
+  text-align: center;
+}
+
+.no-data .nd-img{
+  width: 290rpx;
+  height: 185rpx;
+  margin: 0 auto;
+}
+
+.no-data .nd-title{
+  font-size: 30rpx;
+  color: #1e2020;
+  line-height: 60rpx;
+}
+
+.no-data .nd-desc{
+  font-size: 26rpx;
+  color: #999a9b;
+  line-height: 50rpx;
+}
+
+.no-data .nd-btn{
+  margin-top: 30rpx;
+}
+.no-data .nd-btn button{
+  background: #fe7702;
+  height: 80rpx;
+  border-width: 0rpx;
+  font-size: 30rpx;
+  font-weight: normal;
+  line-height: 80rpx;
+  color: #fff;
+  width: 250rpx;
+  border-radius: 80rpx;
+}
+
+
+.room-list .room-item{
+    width: 100%;
+    height: 330rpx;
+    background: #fff;
+}
+
+.room-item .hotel-title{
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #252527;
+  padding: 0rpx 5%;
+}
+
+.room-item .room{
+  padding: 0rpx 5%;
+  width: 90%;
+  height: 150rpx;
+}
+
+.room-item  .reslut{
+  margin-top: 30rpx;
+  padding-left:5%;
+  height: 80rpx;
+  border-top: solid 1rpx #f6f7f8;
+}
+
+.room-item .re-icon{
+  width: 34rpx;
+  height: 34rpx;
+  margin-top: 22rpx;
+  float: left;
+  margin-right: 15rpx;
+}
+
+.room-item .re-text{
+  line-height: 80rpx;
+  height: 80rpx;
+  font-size: 22rpx;
+  color:rgb(41, 182, 246);
+}
+
+.room .room-img{
+  height: 100%;
+  width: 190rpx;
+  float: left;
+}
+
+.room .room-ri{
+  height: 100%;
+  width: 455rpx;
+  float:left;
+  margin-left: 20rpx;
+}
+.room .room-title{
+   width: 100%;
+   color: #595959;
+   font-size: 30rpx;
+}
+.room .price{
+   float: right;
+   color: #FF5C00;
+}
+.room .room-time{
+   width: 100%;
+   color: #595959;
+   font-size: 26rpx;
+}
+.room .room-desc{
+  width: 100%;
+  color: #BBBBBB;
+  font-size: 22rpx;
+  padding-top: 20rpx;
+}
+
+.room .desc-va{
+  margin-left: 10rpx;
+  color: #101010;
+}
+
+.reslut .look-bill{
+  font-size: 22rpx;
+  color:rgb(41, 182, 246);
+  float: right;
+  line-height: 80rpx;
+  margin-right: 20rpx;
+  text-decoration: underline
+}
+
+.reslut .res-btn{
+  float: right;
+  border-width: 0rpx;
+  border-radius: 0rpx;
+  border-color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fe7702;
+  font-size: 24rpx;
+  color: #FFF;
+  width: 170rpx;
+  text-align: center;
+}
+
+.mask{
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.25;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left:0;
+}
+.popView{
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left:50%;
+  width: 75%;
+  height: 460rpx;
+  margin-top:-250rpx;
+  margin-left:-37.5%; 
+  text-align: center;
+  /* border-radius: 8rpx; */
+}
+
+.pop-content{
+   width: 100%;
+   border-radius: 8rpx;
+   height: 330rpx;
+   background: #fff;
+   overflow: hidden;
+}
+.pop-content .pop-top{
+  text-align: center;
+  line-height: 88rpx;
+  border-bottom: solid 1rpx #f6f7f8;
+  width: 100%;
+  height: 88rpx;
+}
+.pop-content .pop-img{
+  width: 48rpx;
+  height: 48rpx;
+  float: left;
+  margin-top:20rpx;  
+}
+.pop-content .pop-img image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+}
+.pop-content .pop-title{
+  line-height: 88rpx;
+  height: 88rpx;
+  font-size: 30rpx;
+  color: #11b7f6;
+  float: left;
+  margin-left:15rpx; 
+}
+
+.pop-c-text{
+  height: 154rpx;
+  width: 80%;
+  text-align:left;
+  color: #11b7f6;
+  font-size: 26rpx;
+  margin:0 auto;
+  display: table;
+}
+.pop-content .bottom{
+  width: 100%;
+  height: 88rpx;
+  background: #11b7f6;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+}
+.close{
+  margin: 0;
+  margin-top: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.bottom .b-l , .bottom .b-r{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.bottom .b-l{
+  background: #f6f7f8;
+  color: #11b7f6;
+}
+.bottom .b-r{
+  background: #11b7f6;
+  color: #FFF;
+}

@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/checkin/choosein/choosein",
+    "pages/roomOrder/roomOrder",
     "pages/checkout/checkout",
     "pages/order/order",
-    "pages/checkin/choosein/choosein",
     "pages/checkin/editin/editin",
     "pages/login/login",
     "pages/index/index",
@@ -12,7 +13,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#5183E4",
+    "navigationBarBackgroundColor": "#52B5F0",
     "navigationBarTitleText": "好客科技",
     "navigationBarTextStyle": "white"
   },
@@ -38,6 +39,7 @@
       }
     ],
     "backgroundColor": "#fff",
-    "borderStyle": "white"
+    "borderStyle": "white",
+    "selectedColor": "#00BBF8"
   }
 }

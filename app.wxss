@@ -16,7 +16,7 @@ form{
   text-align: center;
 }
 .btn-blue{
-  background-color: #5183E4 !important;
+  background-color: #52B5F0 !important;
 }
 .pd30{
   padding: 30rpx;

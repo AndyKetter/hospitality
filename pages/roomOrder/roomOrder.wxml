@@ -1,0 +1,57 @@
+<view class="container">
+  <view class='no-data' wx:if="{{data==null}}">
+    <image class='nd-img' src='../../images/weiyuding.png'></image>
+    <view class='nd-title'><text>未预定房间</text></view>
+    <view class='nd-desc'><text>亲，你还没有预定房间哟，赶快去</text></view>
+    <view class='nd-btn'><button>酒店预定</button></view>
+  </view>
+   <scroll-view class='room-list' wx:else>
+      <view class='room-item'wx:for="{{data}}">
+
+     
+
+          <text class='hotel-title'>{{item.superTitle}}</text>
+          <view class='room'>
+            <image class='room-img' src='http://img0.imgtn.bdimg.com/it/u=846263369,3636966929&fm=27&gp=0.jpg' mode='aspectFill'></image>
+            <view class='room-ri'>
+              <view class='room-title'><text>{{item.title}}</text> <text class='price'>￥338</text></view>
+              <view class='room-time'><text>{{item.time}}</text></view>
+              <view class='room-desc'><text>床型:</text><text class='desc-va'>{{item.bedType}}</text><text style='margin-left:40rpx'>早餐:</text><text class='desc-va'>{{item.breakfast}}</text> </view>
+            </view>
+          </view>
+          <view class='reslut' >
+            <image src='../../images/tishi.png' class='re-icon' mode='scaleToFill'></image>
+            <text class='re-text'wx:if="{{item.type==0}}">{{item.msg}}</text>
+            <text class='re-text' wx:if="{{item.type==1}}">{{item.msg}}</text>
+            <text class='re-text' wx:if="{{item.type==2}}">{{item.msg}}</text>
+            <text class='re-text' wx:if="{{item.type==3}}">{{item.msg}}</text>
+            <view class='res-btn' wx:if="{{item.type==1}}" data-index="{{index}}" bindtap='clickNodeBtn'>支付押金</view>
+            <view class='res-btn' wx:if="{{item.type==2}}" data-index="{{index}}" bindtap='clickNodeBtn'>确认账单</view>
+            <view class='res-btn' wx:if="{{item.type==3}}" data-index="{{index}}" bindtap='clickNodeBtn'>快速退房</view>
+            <text class='look-bill' wx:if="{{item.type==2}}" data-index="{{index}}" >查看账单</text>
+          </view>                     
+      </view>
+  </scroll-view> 
+
+  <view class='mask' wx:if="{{popData.isShow}}"></view>
+  <view class='popView' wx:if="{{popData.isShow}}">
+    <view class='pop-content'>
+      <view class='pop-top'>
+          <view style='margin:0 auto;display:inline-block;'>
+            <view class='pop-img'><image src='{{popData.icon}}' ></image></view>
+            <lable class='pop-title'>{{popData.title}}</lable>
+            <view style='clear:both'></view>
+          </view>
+      </view>
+      <view class='pop-c-text'>
+          <view style="vertical-align: middle;display: table-cell;width:100%;">{{popData.subTitle}}</view>
+      </view>
+      <view class='bottom' wx:if="{{popData.type == 0}}" bindtap='zhidaoleBack'>{{popData.leftBtn}}</view>
+      <view class='bottom' wx:if="{{popData.type == 1}}">
+        <view class='b-l' bindtap='hiddBack'>{{popData.leftBtn}}</view>
+        <view class='b-r'>{{popData.rightBtn}}</view>
+      </view>
+    </view>
+    <image src='../../images/closePop.png' class='close' bindtap='hiddBack'></image>
+  </view>
+</view>

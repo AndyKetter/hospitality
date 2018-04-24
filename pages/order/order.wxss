@@ -34,7 +34,7 @@
   top: 4rpx;
 }
 .mst{
-  color: #5183E4;
+  color: #52B5F0;
   margin-left: 20rpx;
 }
 .detailView{
@@ -42,7 +42,7 @@
   flex-direction: row;
 }
 .detailLink{
-  color: #5183E4;
+  color: #52B5F0;
   padding-right: 40rpx;
   padding-top: 30rpx;  
 }
