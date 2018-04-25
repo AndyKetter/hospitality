@@ -1,2 +1,121 @@
 <!--pages/reserveHotel/reserveHotel.wxml-->
-<text>pages/reserveHotel/reserveHotel.wxml</text>
+<view class=''>
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='bg-fff shadow'>
+    <view class='pd30 b-b'>
+      <text class='level'>高档型</text>
+      <text class='score'>4.8  极好</text>
+      <text class='good-s'>90%用户好评</text>
+    </view>
+
+    <view class=' b-b map-view'>
+      <view class='map-sit'>
+        长沙市天心区南二环306号，近南...
+      </view>
+      <view class='map'>
+        <text>地图</text>
+        <image class='right-icon' mode='widthFix' src='/images/right-icon.png'></image>
+      </view>
+    </view>
+
+    <view class=' b-b config-view'>
+      <view class='config-sit'>
+        <view>
+          <image class='net' mode='widthFix' src='/images/net.png'></image>
+          <text class='pdl10 small-f'>网络</text>
+        </view>
+        <view class='pdl30'>
+          <image class='parking' mode='widthFix' src='/images/parking.png'></image>
+          <text class='pdl10 small-f'>停车场</text>
+        </view>
+        <view class='pdl30'>
+          <image class='traffic' mode='widthFix' src='/images/traffic.png'></image>
+          <text class='pdl10 small-f'>交通服务</text>
+        </view>
+      </view>
+      <view class='config-d'>
+        <text>详情</text>
+        <image class='right-icon' mode='widthFix' src='/images/right-icon.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='order-list shadow bg-fff'>
+    <view class='checkInTime b-b'>
+      <view class='pd30'>
+        <view class='tc small-f'>入住</view>
+        <view>
+          <text>4月17日</text>  
+          <text class='small-f mgl10'>周二</text>
+        </view>
+      </view>
+      <view class='data-v'><text class='level date-time'>共1晚</text></view>
+      <view class='pd30'>
+        <view class='tc small-f'>离店</view>
+        <view>
+          <text>4月18日</text>  
+          <text class='small-f mgl10'>周三</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='hoter-list b-b'>
+      <view>
+        <view class='tc likeText'><text>猜你喜欢</text></view>
+        <view><image class='coverImg' mode='widthFix' src='/images/hotel-cover.png'></image></view>
+      </view>
+
+      <view class='h-container'>
+        <view class='h-desc'>高级单间（好客超级会员专享）</view>
+        <view class='h-price'>
+          <text>￥338</text>
+          <text class='vip-price'>超级会员价</text>
+        </view>
+      </view>
+
+      <view class='or-btn'>
+        <view class='btn-wrap'>
+          <view class='order-btn'><text>预定</text></view>
+          <view class='line-btn'><text>在线付</text></view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class='hoter-list b-b'>
+      <view>
+        <view class='tc likeText v-hidden'><text>猜你喜欢</text></view>
+        <view><image class='coverImg' mode='widthFix' src='/images/hotel-cover.png'></image></view>
+      </view>
+
+      <view class='h-container'>
+        <view class='h-desc'>高级单间（好客超级会员专享）</view>
+        <view class='h-price'>
+          <text>￥338</text>
+          <text class='vip-price'>超级会员价</text>
+        </view>
+      </view>
+
+      <view class='or-btn'>
+        <view class='btn-wrap'>
+          <view class='gDown'>
+            <text>收起</text> 
+            <image mode='widthFix' src='/images/down-icon.png'></image> 
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

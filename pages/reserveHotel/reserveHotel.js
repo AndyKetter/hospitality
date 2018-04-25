@@ -5,9 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    imgUrls: [
+      '/images/hotel-list-1.png',
+      '/images/hotel-list-2.png',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

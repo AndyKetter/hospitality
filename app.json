@@ -1,17 +1,17 @@
 {
   "pages": [
     "pages/reserveHotel/reserveHotel",
-    "pages/roomOrder/roomOrder",
-    "pages/login/login",
+    "pages/checkout/checkout",
     "pages/order/order",
+    "pages/fastCheckIn/fastCheckIn",
     "pages/checkin/choosein/choosein",
     "pages/checkin/editin/editin",
-    "pages/checkout/checkout",
+    "pages/roomOrder/roomOrder",
+    "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
     "pages/common/common",
-    "template/template",
-    "pages/fastCheckIn/fastCheckIn"
+    "template/template"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,7 +22,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/reserveHotel/reserveHotel",
         "text": "预定",
         "iconPath": "/images/order.png",
         "selectedIconPath": "/images/orderhl.png"

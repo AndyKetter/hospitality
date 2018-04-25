@@ -27,6 +27,9 @@ form{
 .mgl30{
   margin-left: 30rpx;
 }
+.mgl10{
+  margin-left: 10rpx;
+}
 .c-E1761C{
   color: #E1761C;
 }
@@ -38,6 +41,22 @@ form{
 }
 .bg-fff{
   background-color: #fff;
+}
+.b-b{
+  border-bottom: 1px solid #ddd;
+}
+.pdl30{
+  padding-left: 30rpx;
+}
+.pdl10{
+  padding-left: 10rpx;
+}
+.small-f{
+  font-size: 30rpx;
+  color: #757677;
+}
+.v-hidden{
+  visibility: hidden;
 }
 /* page */
 .container {
