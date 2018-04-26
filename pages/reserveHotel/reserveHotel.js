@@ -13,7 +13,10 @@ Page({
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 1000
+    duration: 1000,
+    showPriceList:false,
+    actionText:"收起",
+    rotateName:""
   },
   /**
    * 生命周期函数--监听页面加载
@@ -69,5 +72,12 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  onTap:function(){
+    this.setData({
+      showPriceList: this.data.showPriceList == false ? true:false,
+      actionText: this.data.actionText == "收起" ? "展开":"收起",
+      rotateName: this.data.showPriceList == false ? "rotate" : ""
+    });
   }
 })

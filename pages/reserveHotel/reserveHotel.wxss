@@ -83,6 +83,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 20rpx;
+  padding-left: 30rpx;
 }
 .coverImg{
   width: 180rpx;
@@ -147,4 +148,21 @@
 .gDown > image{
   width: 28rpx;
   margin-left: 5px;
+}
+.price-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+  padding: 30rpx 0 30rpx 30rpx;
+}
+.mor text{
+  border-left: 2px solid #ED852D;
+  padding: 0 10rpx;
+}
+.transf{
+    transition: transform .5s;
+}
+.rotate{
+    transform: rotate(-90deg);
 }

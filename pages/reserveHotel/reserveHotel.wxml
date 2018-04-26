@@ -2,7 +2,7 @@
 <view class=''>
   <view>
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <block wx:for="{{imgUrls}}">
+      <block wx:for="{{imgUrls}}" wx:key>
         <swiper-item>
           <image src="{{item}}" class="slide-image" />
         </swiper-item>
@@ -67,54 +67,100 @@
         </view>
       </view>
     </view>
-
-    <view class='hoter-list b-b'>
-      <view>
-        <view class='tc likeText'><text>猜你喜欢</text></view>
-        <view><image class='coverImg' mode='widthFix' src='/images/hotel-cover.png'></image></view>
-      </view>
-
-      <view class='h-container'>
-        <view class='h-desc'>高级单间（好客超级会员专享）</view>
-        <view class='h-price'>
-          <text>￥338</text>
-          <text class='vip-price'>超级会员价</text>
+    <view class='hotel-container'>
+      <view class='hoter-list b-b'>
+        <view>
+          <view class='tc likeText'><text>猜你喜欢</text></view>
+          <view><image class='coverImg' mode='widthFix' src='/images/hotel-cover.png'></image></view>
         </view>
-      </view>
 
-      <view class='or-btn'>
-        <view class='btn-wrap'>
-          <view class='order-btn'><text>预定</text></view>
-          <view class='line-btn'><text>在线付</text></view>
-        </view>
-      </view>
-
-    </view>
-
-    <view class='hoter-list b-b'>
-      <view>
-        <view class='tc likeText v-hidden'><text>猜你喜欢</text></view>
-        <view><image class='coverImg' mode='widthFix' src='/images/hotel-cover.png'></image></view>
-      </view>
-
-      <view class='h-container'>
-        <view class='h-desc'>高级单间（好客超级会员专享）</view>
-        <view class='h-price'>
-          <text>￥338</text>
-          <text class='vip-price'>超级会员价</text>
-        </view>
-      </view>
-
-      <view class='or-btn'>
-        <view class='btn-wrap'>
-          <view class='gDown'>
-            <text>收起</text> 
-            <image mode='widthFix' src='/images/down-icon.png'></image> 
+        <view class='h-container'>
+          <view class='h-desc'>高级单间（好客超级会员专享）</view>
+          <view class='h-price'>
+            <text>￥338</text>
+            <text class='vip-price'>超级会员价</text>
           </view>
         </view>
+
+        <view class='or-btn'>
+          <view class='btn-wrap'>
+            <view class='order-btn'><text>预定</text></view>
+            <view class='line-btn'><text>在线付</text></view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+
+    <view class='hotel-container'>
+      <view class='hoter-list b-b'>
+        <view>
+          <view class='tc likeText v-hidden'><text>猜你喜欢</text></view>
+          <view><image class='coverImg' mode='widthFix' src='/images/hotel-cover.png'></image></view>
+        </view>
+
+        <view class='h-container'>
+          <view class='h-desc'>高级单间（好客超级会员专享）</view>
+          <view class='h-price'>
+            <text>￥338</text>
+            <text class='vip-price'>超级会员价</text>
+          </view>
+        </view>
+
+        <view class='or-btn'>
+          <view class='btn-wrap' catchtap='onTap'>
+            <view class='gDown'>
+              <text>{{actionText}}</text> 
+              <image class='{{rotateName}} transf' mode='widthFix' src='/images/down-icon.png'></image> 
+            </view>
+          </view>
+        </view>
+
       </view>
 
+      <view wx:if="{{showPriceList}}" class='price-list-v'>
+        <view class='price-list b-b'>
+        <view>
+          <view class='mor'> <text>含双早</text></view>
+          <view class=''>含特惠，预定不可取消</view>
+          <view class='h-price'>
+            <text>￥338</text>
+            <text class='vip-price'>超级会员价</text>
+          </view>
+        </view>
+        
+        <view class='or-btn'>
+          <view class='btn-wrap'>
+            <view class='order-btn'><text>预定</text></view>
+            <view class='line-btn'><text>在线付</text></view>
+          </view>
+        </view>
+
+      </view>
+      <view class='price-list b-b'>
+        <view>
+          <view class='mor'> <text>含双早</text></view>
+          <view class=''>含特惠，预定不可取消</view>
+          <view class='h-price'>
+            <text>￥428</text>
+            <!-- <text class='vip-price'>超级会员价</text> -->
+          </view>
+        </view>
+        
+        <view class='or-btn'>
+          <view class='btn-wrap'>
+            <view class='order-btn'><text>预定</text></view>
+            <view class='line-btn'><text>在线付</text></view>
+          </view>
+        </view>
+
+      </view>
+      </view>
+      
+
     </view>
+    
 
   </view>
 
